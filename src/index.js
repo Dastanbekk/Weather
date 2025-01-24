@@ -13,8 +13,8 @@ searchForm.addEventListener("submit",(e)=>{
     .then((data)=>{
         if(searchInput!==data.name){
             alert("Bunday davlat yoki shahar mavjud emas qayta urinib koring")
-        }
-        main.innerHTML=``
+        }else{
+            main.innerHTML=``
         const div = document.createElement("div")
         div.innerHTML =""
         div.classList.add("flex") 
@@ -57,6 +57,7 @@ searchForm.addEventListener("submit",(e)=>{
             `
             main.append(div)
         });     
+        }
                 
 
             
